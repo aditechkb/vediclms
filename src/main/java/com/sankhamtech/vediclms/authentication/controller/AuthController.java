@@ -8,7 +8,7 @@ public class AuthController {
 
     @GetMapping("/public/login")
     public String loginPage() {
-        return "login"; // maps to templates/login.html
+        return "public/login"; // maps to templates/login.html
     }
 
     @GetMapping("/dashboard")
@@ -18,6 +18,6 @@ public class AuthController {
 
     @GetMapping("/public/purchase")
     public String purchase() {
-        return "purchase";
+        return "public/purchase";
     }
 }
